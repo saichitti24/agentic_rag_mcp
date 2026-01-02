@@ -1,0 +1,76 @@
+{
+  "bb24df41-1bfc-40ac-a1f3-0b2be8489778": {
+    "title": "what is my favorite film?",
+    "ui_messages": [
+      {
+        "role": "user",
+        "content": "what is my favorite film?"
+      },
+      {
+        "role": "assistant",
+        "content": "Based on your previous comments, it seems that your favorite film is \"Interstellar\". You praised its score, created by Hans Zimmer, and specifically mentioned the Ocean Planet Scene, which suggests a strong emotional connection to the movie."
+      },
+      {
+        "role": "user",
+        "content": "who directed it "
+      },
+      {
+        "role": "assistant",
+        "content": "The director of Interstellar is Christopher Nolan."
+      },
+      {
+        "role": "user",
+        "content": "when was Nolan born ? Where ? and his first film too?\n"
+      },
+      {
+        "role": "assistant",
+        "content": "Christopher Nolan was born on July 30, 1970, in London, England. His first film was \"Following,\" a black-and-white low-budget movie released in 1998."
+      },
+      {
+        "role": "user",
+        "content": "what is the plot"
+      },
+      {
+        "role": "assistant",
+        "content": "The plot of Christopher Nolan's film \"Following\" tells the story of a young man who follows strangers around the streets of London and becomes drawn into a criminal underworld."
+      }
+    ]
+  },
+  "05ebe8c3-7ad1-44b7-be3b-027448b574d6": {
+    "title": "when was Bangaladesh formed",
+    "ui_messages": [
+      {
+        "role": "user",
+        "content": "when was Bangaladesh formed"
+      },
+      {
+        "role": "assistant",
+        "content": "Bangladesh was formed on December 16, 1971, after the Bangladesh Liberation War, which started on March 26, 1971."
+      },
+      {
+        "role": "user",
+        "content": "who invented RAW"
+      },
+      {
+        "role": "assistant",
+        "content": "The origin of RAW is unclear as it can refer to different things. In one context, RAW is related to rolling papers for smoking, but its inventor is not specified. In another context, RAW might be an acronym for a different term, such as an intelligence agency, but the provided information does not clearly state who invented it. More context is needed to provide a precise answer."
+      },
+      {
+        "role": "user",
+        "content": "RAW - intelliegnce of india"
+      },
+      {
+        "role": "assistant",
+        "content": "The Research and Analysis Wing (RAW) of India was formed on September 21, 1968."
+      },
+      {
+        "role": "user",
+        "content": "by ?"
+      },
+      {
+        "role": "assistant",
+        "content": "The Research and Analysis Wing (RAW) of India was formed by R. N. Kao."
+      }
+    ]
+  }
+}
