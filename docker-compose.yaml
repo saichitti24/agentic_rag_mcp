@@ -1,0 +1,31 @@
+services:
+  ingestion:
+    build: .
+    container_name: agentic_rag_ingestion
+    command: ["python", "src/ingestion/pdf_data_ingestion.py"]
+    env_file:
+      - .env
+
+    volumes:
+      - ./app_data:/app/app_data
+      - ./chromaDB:/app/chromaDB
+      - ./data:/app/data
+
+  app:
+    build: .
+    container_name: agentic_rag_application
+    command: ["streamlit", "run", "src/app.py","--server.port=8501", "--server.address=0.0.0.0"]
+    env_file:
+      - .env
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./app_data:/app/app_data
+      - ./chromaDB:/app/chromaDB
+      - ./data:/app/data
+
+    depends_on:
+      - ingestion
+    restart: unless-stopped
+
+      
