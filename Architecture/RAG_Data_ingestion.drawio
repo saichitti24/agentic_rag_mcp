@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
+  <diagram name="Page-1" id="tFRPgO7uHXqt6pai40Rb">
+    <mxGraphModel dx="1042" dy="527" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4bXPcpHAZ8Yl_SwN1nu3-4" parent="1" style="swimlane;whiteSpace=wrap;html=1;fontStyle=0;startSize=23;fillColor=#ffcc99;strokeColor=#36393d;" value="&lt;b&gt;RAG Data Ingestion&lt;/b&gt;" vertex="1">
+          <mxGeometry height="368" width="652" x="88" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4bXPcpHAZ8Yl_SwN1nu3-10" edge="1" parent="4bXPcpHAZ8Yl_SwN1nu3-4" source="4bXPcpHAZ8Yl_SwN1nu3-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="4bXPcpHAZ8Yl_SwN1nu3-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4bXPcpHAZ8Yl_SwN1nu3-6" parent="4bXPcpHAZ8Yl_SwN1nu3-4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="PDFs" vertex="1">
+          <mxGeometry height="60" width="120" x="26" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="4bXPcpHAZ8Yl_SwN1nu3-15" edge="1" parent="4bXPcpHAZ8Yl_SwN1nu3-4" source="4bXPcpHAZ8Yl_SwN1nu3-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="4bXPcpHAZ8Yl_SwN1nu3-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4bXPcpHAZ8Yl_SwN1nu3-16" connectable="0" parent="4bXPcpHAZ8Yl_SwN1nu3-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="docs (&lt;b&gt;Document()&lt;/b&gt;)" vertex="1">
+          <mxGeometry relative="1" x="-0.1457" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4bXPcpHAZ8Yl_SwN1nu3-8" parent="4bXPcpHAZ8Yl_SwN1nu3-4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;" value="Load PDFs&lt;div&gt;(&lt;b&gt;PyPDFLoader&lt;/b&gt;)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="208" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="4bXPcpHAZ8Yl_SwN1nu3-19" edge="1" parent="4bXPcpHAZ8Yl_SwN1nu3-4" source="4bXPcpHAZ8Yl_SwN1nu3-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4bXPcpHAZ8Yl_SwN1nu3-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4bXPcpHAZ8Yl_SwN1nu3-20" connectable="0" parent="4bXPcpHAZ8Yl_SwN1nu3-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1" value="chunks" vertex="1">
+          <mxGeometry relative="1" x="-0.0441" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4bXPcpHAZ8Yl_SwN1nu3-9" parent="4bXPcpHAZ8Yl_SwN1nu3-4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;" value="Recursive Character Text Splitter" vertex="1">
+          <mxGeometry height="60" width="120" x="494" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="4bXPcpHAZ8Yl_SwN1nu3-28" edge="1" parent="4bXPcpHAZ8Yl_SwN1nu3-4" source="4bXPcpHAZ8Yl_SwN1nu3-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4bXPcpHAZ8Yl_SwN1nu3-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4bXPcpHAZ8Yl_SwN1nu3-18" parent="4bXPcpHAZ8Yl_SwN1nu3-4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Create vector store&lt;div&gt;(&lt;b&gt;ChromaDB&lt;/b&gt;)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="494" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="4bXPcpHAZ8Yl_SwN1nu3-23" edge="1" parent="4bXPcpHAZ8Yl_SwN1nu3-4" source="4bXPcpHAZ8Yl_SwN1nu3-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="4bXPcpHAZ8Yl_SwN1nu3-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4bXPcpHAZ8Yl_SwN1nu3-24" connectable="0" parent="4bXPcpHAZ8Yl_SwN1nu3-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;b&gt;sentence-transformers/all-MiniLM-L6-V2&lt;/b&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0162" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4bXPcpHAZ8Yl_SwN1nu3-22" parent="4bXPcpHAZ8Yl_SwN1nu3-4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="embeddings" vertex="1">
+          <mxGeometry height="60" width="120" x="110" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="4bXPcpHAZ8Yl_SwN1nu3-27" parent="4bXPcpHAZ8Yl_SwN1nu3-4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" value="Vector Store&amp;nbsp;&lt;div&gt;retriever (k=3)&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="494" y="290" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
